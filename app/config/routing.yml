@@ -1,0 +1,4 @@
+virdi_services:
+    resource: "@VirdiServicesBundle/Resources/config/routing.yml"
+    prefix:   /
+

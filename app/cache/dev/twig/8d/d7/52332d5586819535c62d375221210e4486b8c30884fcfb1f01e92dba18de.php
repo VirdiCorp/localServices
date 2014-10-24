@@ -33,7 +33,7 @@ class __TwigTemplate_8dd752332d5586819535c62d375221210e4486b8c30884fcfb1f01e92db
         echo "
     <li>logged in as <strong>";
         // line 5
-        echo twig_escape_filter($this->env, (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user")) ? ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user"), "username")) : ("Anonymous")), "html", null, true);
+        echo twig_escape_filter($this->env, (($this->getAttribute($this->getContext($context, "app"), "user", array())) ? ($this->getAttribute($this->getAttribute($this->getContext($context, "app"), "user", array()), "username", array())) : ("Anonymous")), "html", null, true);
         echo "</strong> - <a href=\"";
         echo $this->env->getExtension('routing')->getPath("_demo_logout");
         echo "\">Logout</a></li>
@@ -52,6 +52,6 @@ class __TwigTemplate_8dd752332d5586819535c62d375221210e4486b8c30884fcfb1f01e92db
 
     public function getDebugInfo()
     {
-        return array (  36 => 5,  28 => 3,  46 => 8,  40 => 6,  37 => 5,  31 => 4,  26 => 11,);
+        return array (  36 => 5,  31 => 4,  28 => 3,);
     }
 }

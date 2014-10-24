@@ -122,6 +122,19 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        if (0 === strpos($pathinfo, '/fb')) {
+            // virdi_services_fb_fetchprofile
+            if ($pathinfo === '/fb/fetchProfile') {
+                return array (  '_controller' => 'Virdi\\ServicesBundle\\Controller\\FBController::fetchProfile',  '_route' => 'virdi_services_fb_fetchprofile',);
+            }
+
+            // virdi_services_fb_showloginpage
+            if ($pathinfo === '/fb/showLoginPage') {
+                return array (  '_controller' => 'Virdi\\ServicesBundle\\Controller\\FBController::showLoginPage',  '_route' => 'virdi_services_fb_showloginpage',);
+            }
+
+        }
+
         // _welcome
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

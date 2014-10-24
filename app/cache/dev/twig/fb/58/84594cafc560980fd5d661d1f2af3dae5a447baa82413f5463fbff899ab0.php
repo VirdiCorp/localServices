@@ -55,13 +55,13 @@ class __TwigTemplate_fb5884594cafc560980fd5d661d1f2af3dae5a447baa82413f5463fbff8
         // line 11
         echo "    ";
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session"), "flashbag"), "get", array(0 => "notice"), "method"));
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute($this->getContext($context, "app"), "session", array()), "flashbag", array()), "get", array(0 => "notice"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["flashMessage"]) {
             // line 12
             echo "        <div class=\"flash-message\">
             <em>Notice</em>: ";
             // line 13
-            echo twig_escape_filter($this->env, (isset($context["flashMessage"]) ? $context["flashMessage"] : $this->getContext($context, "flashMessage")), "html", null, true);
+            echo twig_escape_filter($this->env, $context["flashMessage"], "html", null, true);
             echo "
         </div>
     ";
@@ -91,7 +91,7 @@ class __TwigTemplate_fb5884594cafc560980fd5d661d1f2af3dae5a447baa82413f5463fbff8
         <div class=\"block\">
             <div class=\"symfony-content\">";
             // line 34
-            echo (isset($context["code"]) ? $context["code"] : $this->getContext($context, "code"));
+            echo $this->getContext($context, "code");
             echo "</div>
         </div>
     ";
@@ -140,6 +140,6 @@ class __TwigTemplate_fb5884594cafc560980fd5d661d1f2af3dae5a447baa82413f5463fbff8
 
     public function getDebugInfo()
     {
-        return array (  120 => 20,  117 => 19,  110 => 22,  108 => 19,  105 => 18,  102 => 17,  94 => 34,  90 => 32,  88 => 31,  84 => 29,  82 => 28,  78 => 26,  73 => 16,  64 => 13,  61 => 12,  56 => 11,  53 => 10,  47 => 8,  41 => 5,  33 => 3,  158 => 79,  139 => 63,  135 => 62,  131 => 61,  127 => 28,  123 => 59,  106 => 45,  101 => 43,  97 => 41,  85 => 32,  80 => 30,  76 => 17,  74 => 27,  63 => 19,  58 => 17,  48 => 9,  45 => 8,  42 => 7,  36 => 4,  30 => 3,);
+        return array (  127 => 28,  120 => 20,  117 => 19,  110 => 22,  108 => 19,  105 => 18,  102 => 17,  94 => 34,  90 => 32,  88 => 31,  84 => 29,  82 => 28,  78 => 26,  76 => 17,  73 => 16,  64 => 13,  61 => 12,  56 => 11,  53 => 10,  47 => 8,  41 => 5,  36 => 4,  33 => 3,);
     }
 }

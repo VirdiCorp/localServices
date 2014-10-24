@@ -22,10 +22,10 @@ class __TwigTemplate_c12d570c50e632435059d4552a5aa711f51b25cdbabae79b9df58853b35
         echo "<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=";
+        <meta charset=\"";
         // line 4
         echo twig_escape_filter($this->env, $this->env->getCharset(), "html", null, true);
-        echo "\"/>
+        echo "\" />
         <meta name=\"robots\" content=\"noindex,nofollow\" />
         <title>";
         // line 6
@@ -34,11 +34,11 @@ class __TwigTemplate_c12d570c50e632435059d4552a5aa711f51b25cdbabae79b9df58853b35
         <link href=\"";
         // line 7
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/framework/css/structure.css", null, true, null), "html", null, true);
-        echo "\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />
+        echo "\" rel=\"stylesheet\" />
         <link href=\"";
         // line 8
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/framework/css/body.css", null, true, null), "html", null, true);
-        echo "\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />
+        echo "\" rel=\"stylesheet\" />
         ";
         // line 9
         $this->displayBlock('head', $context, $blocks);
@@ -111,6 +111,6 @@ class __TwigTemplate_c12d570c50e632435059d4552a5aa711f51b25cdbabae79b9df58853b35
 
     public function getDebugInfo()
     {
-        return array (  98 => 40,  93 => 9,  46 => 10,  44 => 9,  40 => 8,  32 => 6,  27 => 4,  22 => 1,  120 => 20,  117 => 19,  110 => 22,  108 => 19,  105 => 18,  102 => 17,  94 => 34,  90 => 32,  88 => 6,  84 => 29,  82 => 28,  78 => 40,  73 => 16,  64 => 13,  61 => 12,  56 => 11,  53 => 10,  47 => 8,  41 => 5,  33 => 3,  158 => 79,  139 => 63,  135 => 62,  131 => 61,  127 => 28,  123 => 59,  106 => 45,  101 => 43,  97 => 41,  85 => 32,  80 => 41,  76 => 17,  74 => 27,  63 => 19,  58 => 17,  48 => 9,  45 => 8,  42 => 7,  36 => 7,  30 => 3,);
+        return array (  98 => 40,  93 => 9,  88 => 6,  80 => 41,  78 => 40,  46 => 10,  44 => 9,  40 => 8,  36 => 7,  32 => 6,  27 => 4,  22 => 1,);
     }
 }
