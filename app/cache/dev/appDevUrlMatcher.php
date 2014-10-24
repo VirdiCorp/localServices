@@ -135,6 +135,19 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        if (0 === strpos($pathinfo, '/lin')) {
+            // virdi_services_lin_showloginpage
+            if ($pathinfo === '/lin/showLoginPage') {
+                return array (  '_controller' => 'Virdi\\ServicesBundle\\Controller\\LInController::showLoginPage',  '_route' => 'virdi_services_lin_showloginpage',);
+            }
+
+            // virdi_services_lin_fetchprofile
+            if ($pathinfo === '/lin/fetchProfile') {
+                return array (  '_controller' => 'Virdi\\ServicesBundle\\Controller\\LInController::fetchProfile',  '_route' => 'virdi_services_lin_fetchprofile',);
+            }
+
+        }
+
         // _welcome
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
