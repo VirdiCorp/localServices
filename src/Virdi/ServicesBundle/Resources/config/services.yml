@@ -1,0 +1,4 @@
+services:
+#    virdi_services.curl:
+#        class: Virdi\ServicesBundle\Utilities\CurlUtility
+#        arguments: ["@url","@returnTransfer","@conTimeOut","@timeOut"]

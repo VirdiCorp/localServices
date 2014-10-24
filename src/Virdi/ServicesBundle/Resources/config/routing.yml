@@ -1,0 +1,3 @@
+hpms_route:
+    resource: "@VirdiServicesBundle/Controller/"
+    type: annotation
